@@ -28,7 +28,7 @@ class DerivAPIService {
           this.authorize();
         } else {
           // Redirect to Deriv OAuth page
-          const encodedRedirectUri = encodeURIComponent('https://8v5m5c-3000.csb.app');
+          const encodedRedirectUri = encodeURIComponent('https://w37ndn-2222.csb.app');
           const oauthUrl = `https://oauth.deriv.com/oauth2/authorize?app_id=68761&l=EN&brand=deriv&redirect_uri=${encodedRedirectUri}`;
           window.location.href = oauthUrl;
         }
