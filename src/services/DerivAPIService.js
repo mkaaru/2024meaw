@@ -18,7 +18,7 @@ class DerivAPIService {
 
   async connect() {
     return new Promise((resolve, reject) => {
-      const ws = new WebSocket('wss://ws.binaryws.com/websockets/v3?app_id=68761');
+      const ws = new WebSocket('wss://ws.binaryws.com/websockets/v3?app_id=76083');
 
       ws.onopen = () => {
         this.connection = ws;
@@ -29,7 +29,7 @@ class DerivAPIService {
         } else {
           // Redirect to Deriv OAuth page
           const encodedRedirectUri = encodeURIComponent('https://w37ndn-2222.csb.app');
-          const oauthUrl = `https://oauth.deriv.com/oauth2/authorize?app_id=68761&l=EN&brand=deriv&redirect_uri=${encodedRedirectUri}`;
+          const oauthUrl = `https://oauth.deriv.com/oauth2/authorize?app_id=76083&l=EN&brand=deriv&redirect_uri=${encodedRedirectUri}`;
           window.location.href = oauthUrl;
         }
         
